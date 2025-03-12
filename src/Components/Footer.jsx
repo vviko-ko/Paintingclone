@@ -1,8 +1,12 @@
 import React from 'react'
-
+import { FaChevronRight } from "react-icons/fa";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";
 export default function Footer() {
   return (
-    <div className='bg-gradient-to-r from-blue-500 via-purple-500 to-green-500  pb-40 p-40'> 
+    <div className='bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 p-30'> 
     <div className='flex  gap-20 w-[100opx] mt-15'>
         <div>
             <p className='text-white mt-7 w-[250px]'>We are the top painting and decoration companies in Nigeria where our experts offer unparalled and quality service to paint the walls and ceilings of your home and office. Get in touch with use to restore the warmth and beauty of your property.</p>
@@ -39,15 +43,24 @@ export default function Footer() {
     <div>
         <h1 className='text-white font-bold text-2xl mt-5'>Locations</h1>
         <div className=''>
-            <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ol className='text-white flex gap-45 mt-6'>
+                <li className='flex'><FaChevronRight className='mt-1.5'/>Lagos</li>
+                <li className='flex'><FaChevronRight className='mt-1.5'/>Ibadan</li>
+                <li className='flex'><FaChevronRight className='mt-1.5'/>Ijebu-Ode</li>
+                <li className='flex'><FaChevronRight className='mt-1.5'/>Ijebu-Ife</li>
+                <li className='flex'><FaChevronRight className='mt-1.5'/>Ago</li>
             </ol>
         </div>
     </div>
+    <div className='border border-b-2 mt-15 border-b-white'></div>
+        <h2 className='text-white font-bold text-2xl text-center mt-10'>Follow Us On Social Network</h2>
+        <div className='flex text-5xl gap-5 justify-center mt-5 text-white'>
+            <FaSquareWhatsapp />
+            <FaInstagramSquare />
+            <FaFacebook />
+            <AiFillTikTok />
+        </div>
     </div>
+
   )
 }
