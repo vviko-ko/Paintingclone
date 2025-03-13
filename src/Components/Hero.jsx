@@ -16,7 +16,7 @@ export default function Hero() {
           </div>
 
           <div className="container mx-auto px-4 py-20 relative z-10 ">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white  leading-tight ml-135">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white  leading-tight ml-155">
               VOLUME INTERIOR DESIGNS <span className="ml-55">IN NIGERIA</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mb-2 mx-auto ml-170 font-semibold mt-5">

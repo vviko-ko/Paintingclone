@@ -2,7 +2,7 @@ import {useState}from 'react'
 import { FaPaintBrush } from "react-icons/fa";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import About from './About';
+import About from '../Components/About.jsx';
 
 export default function Navbar() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -27,18 +27,22 @@ export default function Navbar() {
              <Link to='/'> Our Services ⌄</Link>
             </button>
             {dropdownOpen && ( 
-              <div className="absolute left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg">
-                <a href="#" className="block px-4 py-2 hover:bg-gray-200">Painting & Decorating</a>
+              <div className="absolute left-0 mt-5 w-48 bg-white text-black rounded-lg shadow-lg">
+                <a href="#" className="block px-4 py-2 hover:bg-gray-200">Painting & Designs</a>
                 <a href="#" className="block px-4 py-2 hover:bg-gray-200">Wallpaper Hanging</a>
                 <a href="#" className="block px-4 py-2 hover:bg-gray-200">Commercial Decorating</a>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-200">Interior Design</a>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-200">External Design</a>
+                <a href="#" className="block px-4 py-2 hover:bg-gray-200">Interior Decorating</a>
+                <a href="#" className="block px-4 py-2 hover:bg-gray-200">External Decorating</a>
+                <a href="#" className="block px-4 py-2 hover:bg-gray-200">Laminate Floor Installers</a>
+                <a href="#" className="block px-4 py-2 hover:bg-gray-200">House Refurbishment</a>
+                <a href="#" className="block px-4 py-2 hover:bg-gray-200">Plastering</a>
+                <a href="#" className="block px-4 py-2 hover:bg-gray-200">bathroom And Kitchen Tiling</a>
               </div>
             )}
           </div>
 
         <Link to='/About'><span className="cursor-pointer hover:">About Us</span></Link>
-        <span className="hover:underline cursor-pointer">Prices</span>
+       <Link to='/'><span className="hover:underline cursor-pointer">Prices</span></Link>
         <span className="hover:underline cursor-pointer">Photo Gallery</span>
       </div>
 
