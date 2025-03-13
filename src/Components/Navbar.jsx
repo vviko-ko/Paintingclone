@@ -42,7 +42,7 @@ export default function Navbar() {
           </div>
 
         <Link to='/About'><span className="cursor-pointer hover:">About Us</span></Link>
-       <Link to='/'><span className="hover:underline cursor-pointer">Prices</span></Link>
+       <Link to='/Prices'><span className="hover:underline cursor-pointer">Prices</span></Link>
         <span className="hover:underline cursor-pointer">Photo Gallery</span>
       </div>
 

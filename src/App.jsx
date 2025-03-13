@@ -5,6 +5,7 @@ import Landing from './Components/Landing'
 import Inses from './Components/Inses'
 import Footer from './Components/Footer'
 import About from './Components/About'
+import Prices from './Components/Prices'
 import Home from './Components/Home'
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
@@ -17,6 +18,7 @@ export default function App() {
 
       <Link to={"/"}>Home</Link>
       <Link to="/about">About</Link>
+      {/* <link to="/prices">Prices</link> */}
     
     
     
@@ -24,6 +26,7 @@ export default function App() {
     <Routes>
     <Route path="/" element={<Home/>}></Route>
     <Route path="/about" element={<About/>}></Route>
+    <Route path="/prices" element={<Prices/>}></Route>
   </Routes>
   </BrowserRouter>
     </div>
