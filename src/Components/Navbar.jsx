@@ -43,7 +43,8 @@ export default function Navbar() {
 
         <Link to='/About'><span className="cursor-pointer hover:">About Us</span></Link>
        <Link to='/Prices'><span className="hover:underline cursor-pointer">Prices</span></Link>
-        <span className="hover:underline cursor-pointer">Photo Gallery</span>
+       <Link to='/Photo'><span className='hover:underline cursor-pointer'>Photo Gallery</span></Link>
+        
       </div>
 
       {/* Request Button */}
