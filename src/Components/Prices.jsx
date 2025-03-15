@@ -52,7 +52,7 @@ function Prices() {
 
         {/* Sticky Form Sidebar - Positioned on the right */}
         {/* <div className='relative'> */}
-        <div className="fixed top-20 right-5 z-50 ">
+        <div className="absolute top-150 right-5 z-50 ">
           <StickyForm />
         </div>
         {/* </div> */}

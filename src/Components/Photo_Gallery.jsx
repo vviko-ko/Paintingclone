@@ -59,7 +59,7 @@ function Photo() {
         </div>
 
         {/* stickform */}
-        <div className="fixed top-20 right-5 z-50 ">
+        <div className=" absolute top-150 right-5 z-50 ">
           <StickyForm />
         </div>
         {/* end of stickform  */}

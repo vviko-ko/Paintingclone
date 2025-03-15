@@ -9,6 +9,7 @@ import Prices from './Components/Prices'
 import Photo from './Components/Photo_Gallery'
 import Home from './Components/Home'
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import StickyForm from './Components/StickyForm_prices'
 
 export default function App() {
   return (
@@ -16,10 +17,10 @@ export default function App() {
       {/* <Navbar /> */}
 
       <BrowserRouter>
-
+{/* 
       <Link to={"/"}>Home</Link>
       <Link to="/about">About</Link>
-      {/* <link to="/prices">Prices</link> */}
+      <link to="/prices">Prices</link> */}
     
     
     
@@ -29,6 +30,7 @@ export default function App() {
     <Route path="/about" element={<About/>}></Route>
     <Route path="/prices" element={<Prices/>}></Route>
     <Route path='/Photo' element={<Photo/>}></Route>
+    <Route path='/StickyForm' element={<StickyForm/>}></Route>
   </Routes>
   </BrowserRouter>
     </div>
