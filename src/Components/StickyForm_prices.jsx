@@ -32,7 +32,7 @@ const StickyForm = () => {
   };
 
   return (
-    <div className="sticky right-5 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 p-6 shadow-lg w-120 h-195 border border-gray-200">
+    <div className="sticky right-5 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 p-6 shadow-lg w-107 h-180 border border-gray-200">
       <h2 className="text-4xl font-bold mb-4 text-white text-center">REQUEST A QUOTE</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
