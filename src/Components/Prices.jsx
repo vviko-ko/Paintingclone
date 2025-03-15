@@ -65,7 +65,7 @@ function Prices() {
 
         {/* 4x4 Table */}
         <div className="mt-5 ms-18">
-            <table className="w-250 border-collapse border border-gray-300  text-left">
+            <table className="w-360 border-collapse border border-gray-300  text-left">
               <thead className="bg-gradient-to-r from-blue-500 via-purple-500 to green-500">
                 <tr>
                   <th className="border border-gray-300 p-8">Service</th>
@@ -134,34 +134,34 @@ function Prices() {
             </div>
           {/* Average Rates Text (Moved right after the last content) */}
         <div className="ms-20 mt-5">
-          <p className="text-5xl font-bold pt-8">Consider the costs of Painting and Decoration <br /> Works in Nigeria
+          <p className="text-5xl font-bold pt-8">Consider the costs of Painting and Decoration  Works in Nigeria
           </p>
           <p className='text-xl pt-5 pb-3  '>When searching for a good painter and decorator in Nigeria, make sure you ask about
-             the costs that need to be paid <br /> for the services offered. On this basis, you are not encouraging him to avoid paying
-              the tax, rather you offer to pay cash <br /> for the work to be done.
+             the costs that need to be paid  for the services offered. On this basis, you are <br /> not encouraging him to avoid paying
+              the tax, rather you offer to pay cash for the work to be done.
           </p>
-          <p className='text-xl pt-5 pb-3  '>It is not unethical for painters and decorators to include 20% to the cost of materials used for covering the price to <br /> purchase them.
-             Also, they do not want to bear the risk if not getting paid on time at the end of the job. Make sure you <br /> pay for all the materials
+          <p className='text-xl pt-5 pb-3  '>It is not unethical for painters and decorators to include 20% to the cost of materials used for covering the price to purchase them.
+             Also, they do not want to bear the <br /> risk if not getting paid on time at the end of the job. Make sure you pay for all the materials
               purchased which will make the painter and decorator happy and satisfied.
           </p>
         </div>
 
          {/* Average Rates Text (Moved right after the last content) */}
          <div className="ms-20 mt-5">
-          <p className="text-5xl font-bold pt-8">Ask for Free Quotes from Our Painters and <br /> Decorators
+          <p className="text-5xl font-bold pt-8">Ask for Free Quotes from Our Painters and Decorators
           </p>
           <p className='text-xl pt-5 pb-3  '>You will find that there is much more involved in painting and decorating works than knowing
-             how to use the paintbrush <br /> or roller. We want you to be confident when you ask a painter to provide you a quote for painting your
-              property. <br /> You can  recognise from their answers what they are exactly talking about. You can also ask for free quotes and compare <br />
+             how to use the paintbrush or roller. We want you to be confident when <br /> you ask a painter to provide you a quote for painting your
+              property. You can  recognise from their answers what they are exactly talking about, you can also ask for free quotes and compare
               between them to choose painters and decorators for your need.
           </p>
         </div>
           {/* Average Rates Text (Moved right after the last content) */}
           <div className="ms-20 mt-5">
-          <p className="text-5xl font-bold pt-8">Costs to Pay for Your Painting and Decorating <br /> Works
+          <p className="text-5xl font-bold pt-8">Costs to Pay for Your Painting and Decorating Works
           </p>
-          <p className='text-xl pt-5 pb-3  '>Get in touch with painters and decorators in your area, request for quotes and begin comparing the rates
-             to find the <br /> right tradesman for your work. Our quote service is for free that does not have any obligations at all.
+          <p className='text-xl pt-5 pb-10  '>Get in touch with painters and decorators in your area, request for quotes and begin comparing the rates
+             to find the right tradesman for your work. Our quote service <br /> is for free that does not have any obligations at all.
           </p>
         </div>
         {/* footer */}

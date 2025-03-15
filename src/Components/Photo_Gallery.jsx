@@ -49,7 +49,7 @@ function Photo() {
         style={{ backgroundImage: `url(${bghero})` }}
       >
         {/* photogallery */}
-        <div className="ms-40 flex gap-15">
+        <div className="ms-40 pt-15  flex gap-15">
         <div>
             <img src={photoimage1} alt="" className="w-100 h-100 mt-10 " />
         </div>
@@ -79,25 +79,23 @@ function Photo() {
         <div>
         <img src={photoimage6} alt="" className="w-100 h-100 mt-10 " />
         </div>
-        </div>
-        {/* ------------ */}
-        <div className="ms-40 flex gap-15">
         <div>
             <img src={photoimage7} alt="" className="w-100 h-100 mt-10 " />
         </div>
-        <div>
-        <img src={photoimage8} alt="" className="w-100 h-100 mt-10 " />
         </div>
-        </div>
-        {/* ---------------------- */}
-        <div className="ms-40 flex gap-15 pb-10">
+        {/* ------------ */}
+        <div className="ms-40 flex gap-15 pb-15">
         <div>
-            <img src={photoimage9} alt="" className="w-100 h-100 mt-10 " />
+            <img src={photoimage8} alt="" className="w-100 h-100 mt-10 " />
         </div>
         <div>
-        <img src={photoimage10} alt="" className="w-100 h-100 mt-10 " />
+        <img src={photoimage9} alt="" className="w-100 h-100 mt-10 " />
+        </div>
+        <div>
+            <img src={photoimage10} alt="" className="w-100 h-100 mt-10 " />
         </div>
         </div>
+        
         {/* --------------------- */}
 
         
