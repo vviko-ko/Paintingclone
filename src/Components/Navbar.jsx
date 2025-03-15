@@ -48,7 +48,7 @@ export default function Navbar() {
       </div>
 
       {/* Request Button */}
-      <Link to='/StickyForm_prices'><button className="bg-white text-black font-semibold px-4 py-2 rounded-full hover:bg-gray-700 hidden md:block ml-45">
+      <Link to='/StickyForm'><button className="bg-white text-black font-semibold px-4 py-2 rounded-full hover:bg-gray-700 hidden md:block ml-45">
         Request a Quote
       </button></Link>
 
