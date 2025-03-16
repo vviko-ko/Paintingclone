@@ -28,10 +28,13 @@ function Prices() {
           </div>
         </div>
       </div>
+      {/* ------------ */}
       <div
         className="hero pt-12 bg-cover bg-center h-[800px]"
         style={{ backgroundImage: `url(${bghero})` }}
       >
+
+        {/* ----------- */}
         <h1 className="font-bold text-5xl ms-20">
           Costs of Hiring a Painter and Decorator in <br /> Nigeria
         </h1>
@@ -49,6 +52,7 @@ function Prices() {
             <img src={pchero} alt="" className="max-w-[100%] h-[350px] mt-10 rounded-lg" />
           </div>
         </div>
+        {/* --------------------- */}
 
         {/* Sticky Form Sidebar - Positioned on the right */}
         {/* <div className='relative'> */}
