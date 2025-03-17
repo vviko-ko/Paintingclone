@@ -15,22 +15,18 @@ export default function About() {
         style={{ backgroundImage: `url(${Banner2})`, minHeight: '395px' }}
       >
         <Navbar />
-        <div className="mt-14 ml-10 md:ml-44">
-                  <h1 className="text-white font-bold text-3xl md:text-[36px]">
-                    About
-                  </h1>
-                  <div className="flex gap-6 mt-5">
-                    <button className="flex items-center gap-3 border-2 border-white rounded-lg p-3 hover:bg-white hover:text-black transition duration-300">
-                      <FaPhoneVolume className="text-white text-[24px]" />
-                      <span className="text-[24px] text-white font-bold">
-                        080 8129 5005
-                      </span>
-                    </button>
-                    <button className="border border-white p-4 font-bold text-xl bg-white hover:bg-blue-300 text-black hover:text-white rounded-sm transition duration-300">
-                      Contact Us
-                    </button>
-                  </div>
-                </div>
+        <div className="mt-14 ">
+                 <h1 className="text-white font-bold text-[36px]">About</h1>
+                 <div className="flex gap-6 mt-5">
+                   <button className="flex items-center gap-3 border-2 border-white rounded-lg p-3">
+                     <FaPhoneVolume className="text-white text-[24px]" />
+                     <span className="text-[24px] text-white font-bold">080 8129 5005</span>
+                   </button>
+                   <button className="border border-white p-4 font-bold text-xl bg-white hover:bg-blue-300 text-black hover:text-white rounded-sm transition duration-300">
+                     Contact Us
+                   </button>
+                 </div>
+               </div>
       </div>
 
       {/* About Section */}
@@ -64,7 +60,7 @@ export default function About() {
             <p className='mt-5 text-base sm:text-lg'>
               We ask that you give us the chance to show our expertise in painting and decoration by hiring us. You can even get a free quote and estimate from one of our smart, reliable, and friendly estimators when you come to Paint Works Nigeria.
             </p>
-            <p className='mt-5 text-base sm:text-lg'>We are looking forward to hearing from you.</p>
+            <p className='mt-5 text-base sm:text-lg pb-5'>We are looking forward to hearing from you.</p>
           </div>
         </div>
       </div>
