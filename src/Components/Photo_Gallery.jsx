@@ -25,18 +25,18 @@ function Photo() {
   return (
     <main>
       <div
-        className="hero pt-12 bg-cover bg-center h-[395px] md:h-[500px]"
+        className="hero pt-12 bg-cover bg-center h-[310px] md:h-[400px]"
         style={{ backgroundImage: `url(${Photobanner})` }}
       >
         <Navbar />
         <div className="mt-14 ml-10 md:ml-44">
-          <h1 className="text-white font-bold text-3xl md:text-[36px]">
+          <h1 className="text-white font-bold text-4xl md:text-[36px]">
             Photo Gallery
           </h1>
           <div className="flex gap-6 mt-5">
-            <button className="flex items-center gap-3 border-2 border-white rounded-lg p-3 hover:bg-white hover:text-black transition duration-300">
+            <button className="flex items-center gap-3 border-2 border-white rounded-lg p-3 hover:bg-blue-500 hover:text-black transition duration-300">
               <FaPhoneVolume className="text-white text-[24px]" />
-              <span className="text-[24px] text-white font-bold">
+              <span className="text-[15px] text-white font-bold">
                 080 8129 5005
               </span>
             </button>

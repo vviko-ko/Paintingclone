@@ -67,7 +67,7 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden mt-3 bg-white text-black w-full shadow-lg p-4 rounded-lg flex flex-col space-y-3">
           <Link to="/" className="font-semibold">Home</Link>
-          <button onClick={() => setDropdownOpen(!dropdownOpen)} className="font-semibold">
+          <button onClick={() => setDropdownOpen(!dropdownOpen)} className="font-semibold mr-55">
             Our Services ⌄
           </button>
           {dropdownOpen && (
