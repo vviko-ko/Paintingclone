@@ -43,7 +43,7 @@ export default function ServicesDropdown() {
           animate={{ rotate: dropdownOpen ? 180 : 0 }}
           transition={{ duration: 0.3 }}
         >
-          <ChevronDown size={27} />
+          <ChevronDown size={27 } />
         </motion.div>
  
       </button>
