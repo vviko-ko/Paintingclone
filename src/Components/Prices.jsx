@@ -104,9 +104,8 @@ function Prices() {
             Our quote service is free and comes with no obligations.
           </p>
         </div>
-      
-        <Footer />
       </div>
+      <Footer />
     </main>
   );
 }
