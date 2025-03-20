@@ -1,6 +1,8 @@
+import { Dropdown } from "bootstrap";
 import { useState } from "react";
 import { FaPaintBrush, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Menu from './menu';
 
 export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -20,31 +22,7 @@ export default function Navbar() {
           <Link to="/" className="bg-white text-black px-4 py-1 rounded-full font-semibold">
             Home
           </Link>
-          {/* Dropdown for Services */}
-          <div className="relative">
-            <button className="focus:outline-none" onClick={() => setDropdownOpen(!dropdownOpen)}>
-              Our Services ⌄
-            </button>
-            {dropdownOpen && (
-              <div className="absolute left-0 mt-3 w-48 bg-white text-black rounded-lg shadow-lg">
-                {[
-                  "Painting & Designs",
-                  "Wallpaper Hanging",
-                  "Commercial Decorating",
-                  "Interior Decorating",
-                  "External Decorating",
-                  "Laminate Floor Installers",
-                  "House Refurbishment",
-                  "Plastering",
-                  "Bathroom & Kitchen Tiling",
-                ].map((service, index) => (
-                  <a key={index} href="#" className="block px-4 py-2 hover:bg-gray-200">
-                    {service}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
+          <Menu/>
           <Link to="/About" className="hover:underline">About Us</Link>
           <Link to="/Prices" className="hover:underline">Prices</Link>
           <Link to="/Photo" className="hover:underline">Photo Gallery</Link>
