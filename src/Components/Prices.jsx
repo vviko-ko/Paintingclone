@@ -68,7 +68,8 @@ function Prices() {
                 ['Interior Painting', '3 Days', '$500', 'Lagos'],
                 ['Exterior Painting', '5 Days', '$800', 'Abuja'],
                 ['Wallpaper Installation', '2 Days', '$300', 'Port Harcourt'],
-                ['Decorative Finishing', '4 Days', '$700', 'Kano']
+                ['Decorative Finishing', '4 Days', '$700', 'Kano'],
+                ['Interior Painting', '3 Days', '$500', 'Lagos']
                 
               ].map((row, index) => (
                 <tr key={index} className="bg-white even:bg-gray-100">

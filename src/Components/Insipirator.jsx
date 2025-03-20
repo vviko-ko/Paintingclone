@@ -8,7 +8,7 @@ export default function Insipirator() {
         <img src={Ins} alt="" />
             <div className='flex'>
                 <div>
-                    <img src={Painter} alt="" className='h-[632px]'/>
+                    <img src={Painter} alt=""/>
                 </div>
                 <div>
                     <img src={Flex} alt="" />
