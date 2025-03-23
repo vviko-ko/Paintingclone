@@ -1,5 +1,7 @@
+import { div } from "framer-motion/client";
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import Navbar from "./Navbar";
 
 const StickyForm = () => {
   const [captchaValue, setCaptchaValue] = useState(null);
@@ -32,58 +34,62 @@ const StickyForm = () => {
   };
 
   return (
-    <div className="sticky right-5 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 p-6 shadow-lg w-107 h-180 border border-gray-200">
-      <h2 className="text-4xl font-bold mb-4 text-white text-center">REQUEST A QUOTE</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
+    <div className="mt-5">
+    <Navbar />
+
+    <div className=" fixed mt-5  right-5 top-20 md:top-auto md:relative bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 p-6 shadow-lg w-full max-w-md md:max-w-lg lg:max-w-xl border border-gray-200 rounded-lg">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-white text-center">REQUEST A QUOTE</h2>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div>
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full mt-2 p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-white"
+            className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-200"
             placeholder="Enter your name"
           />
         </div>
-        <div className="mb-3">
+        <div>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full mt-2 p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-white"
+            className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-200"
             placeholder="Enter your email"
           />
         </div>
-        <div className="mb-3">
+        <div>
           <input
             type="number"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full mt-2 p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-white"
+            className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-200"
             placeholder="Enter your phone number"
           />
         </div>
-        <div className="mb-3">
+        <div>
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full mt-2 p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-white"
+            className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-200"
             placeholder="Your message"
           ></textarea>
         </div>
-        <div className="mb-3">
+        <div className="flex justify-center">
           <ReCAPTCHA sitekey="YOUR_SITE_KEY_HERE" onChange={handleCaptchaChange} />
         </div>
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white p-4 mt-3 rounded-md hover:bg-blue-700 transition"
+          className="w-full bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 transition"
         >
           Submit
         </button>
       </form>
+    </div>
     </div>
   );
 };
