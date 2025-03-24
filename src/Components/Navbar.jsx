@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaPaintBrush, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Menu from './menu';
+import { a } from "framer-motion/client";
 
 export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
