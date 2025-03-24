@@ -80,7 +80,7 @@ const StickyForm = () => {
             ></textarea>
           </div>
           <div className="flex justify-center">
-            <ReCAPTCHA sitekey="YOUR_SITE_KEY_HERE" onChange={handleCaptchaChange} />
+            <ReCAPTCHA sitekey="6LcVzP4qAAAAAIkICgm1vjflLZ6J_SVMXOo8SGUd" onChange={handleCaptchaChange} />
           </div>
           <button
             type="submit"
