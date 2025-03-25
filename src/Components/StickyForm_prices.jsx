@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import Navbar from "./Navbar";
+import bghero from "../Image/bg-hero.png"
 
 const StickyForm = () => {
   const [captchaValue, setCaptchaValue] = useState(null);
@@ -33,7 +34,7 @@ const StickyForm = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4"  style={{ backgroundImage: `url(${bghero})` }}>
       <Navbar />
       <div className="bg-gradient-to-r from-blue-500 mt-5 via-purple-500 to-green-500 p-6 shadow-lg w-full max-w-md md:max-w-lg lg:max-w-xl border border-gray-200 rounded-lg">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-white text-center">
