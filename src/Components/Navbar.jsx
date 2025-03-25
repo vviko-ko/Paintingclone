@@ -27,6 +27,7 @@ export default function Navbar() {
           <Link to="/About" className="hover:underline">About Us</Link>
           <Link to="/Prices" className="hover:underline">Prices</Link>
           <Link to="/Photo" className="hover:underline">Photo Gallery</Link>
+          
         </div>
 
         {/* Request Button (Hidden on Small Screens) */}

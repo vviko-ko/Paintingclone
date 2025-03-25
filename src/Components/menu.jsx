@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom"; // Import Link
 
 export default function ServicesDropdown() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -13,19 +14,17 @@ export default function ServicesDropdown() {
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
   }, []);
 
   const services = [
-    { name: "Painting & Designs", link: "/Our services/Painting_Design" },
-    { name: "Wallpaper Hanging", link: "/Our services/Wallpaper_Hanging" },
-    { name: "Commercial Decorating", link: "/Our services/Commercial_Decorating" },
-    { name: "Interior Decorating", link: "/Our services/Interior_Decor" },
-    { name: "External Decorating", link: "/Our services/External_Decor" },
-    { name: "Laminate Floor Installers", link: "/Our services/laminate_Floor" },
-    { name: "House Refurbishment", link: "/Our services/House_Refurb" },
-    { name: "Plastering", link: "/Our services/Plastering" },
-    { name: "Bathroom & Kitchen Tiling", link: "/Our services/Bathroom and Kitchen" },
+    { name: "Painting & Designs", link: "/Our-services/Painting_Design" },
+    { name: "Wallpaper Hanging", link: "/Our-services/Wallpaper_Hanging" },
+    { name: "Commercial Decorating", link: "/Our-services/Commercial_Decorating" },
   ];
 
   return (
@@ -50,13 +49,14 @@ export default function ServicesDropdown() {
             className="absolute left-0 mt-2 w-56 bg-white text-black rounded-lg shadow-lg border"
           >
             {services.map((service, index) => (
-              <a
+              <Link
                 key={index}
-                href={service.link}
+                to={service.link} // Using React Router Link
                 className="block px-4 py-2 hover:bg-gray-200 transition duration-200"
+                onClick={() => setDropdownOpen(false)} // Close dropdown on selection
               >
                 {service.name}
-              </a>
+              </Link>
             ))}
           </motion.div>
         )}
