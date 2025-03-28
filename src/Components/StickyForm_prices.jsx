@@ -33,6 +33,32 @@ const StickyForm = () => {
     console.log("Form submitted:", formData);
   };
 
+    const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "7293261f-ddd2-4bc4-8587-0f05fab8c8d6");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      alert("Success", data);
+      setResult(data.message);
+      event.target.reset();
+    } else {
+      alert("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4"  style={{ backgroundImage: `url(${bghero})` }}>
       <Navbar />
@@ -40,7 +66,7 @@ const StickyForm = () => {
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-white text-center">
           REQUEST A QUOTE
         </h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={onSubmit} className="space-y-4">
           <div>
             <input
               type="text"
@@ -81,7 +107,7 @@ const StickyForm = () => {
             ></textarea>
           </div>
           <div className="flex justify-center">
-            <ReCAPTCHA sitekey="6LcVzP4qAAAAAIkICgm1vjflLZ6J_SVMXOo8SGUd" onChange={handleCaptchaChange} />
+            <ReCAPTCHA sitekey="ba46189a-b38b-4093-9bac-8c4c73d10d7b" onChange={handleCaptchaChange} />
           </div>
           <button
             type="submit"
@@ -90,6 +116,7 @@ const StickyForm = () => {
             Submit
           </button>
         </form>
+        <span>{result}</span>
       </div>
     </div>
   );

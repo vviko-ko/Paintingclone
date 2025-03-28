@@ -25,13 +25,13 @@ export default function Landing() {
           <h1 className="font-bold text-3xl md:text-4xl">Welcome To VID Paint Works Nigeria</h1>
           <h3 className="font-bold mt-4 text-xl md:text-2xl">Your Trusted Painters and Decorators in Nigeria</h3>
           <p className="mt-4 text-gray-700 text-sm md:text-base">
-            At Paint Works Nigeria, we ensure to provide excellent <span className="text-red-500">residential</span> and 
-            <span className="text-red-500">commercial</span> painting and decorating services, leaving customers satisfied from 
+            At Paint Works Nigeria, we ensure to provide excellent <span className="text-red-500">residential</span> and <br />
+            <span className="text-red-500">commercial</span> painting and decorating services, leaving customers <br /> satisfied from 
             beginning to end...
           </p>
         </div>
         <div>
-          <img src={Building} alt="Building" className="h-60 w-full max-w-sm lg:h-80" />
+          <img src={Building} alt="Building" className="h-60 w-full max-w-sm lg:h-80 rounded-sm" />
         </div>
       </div>
       

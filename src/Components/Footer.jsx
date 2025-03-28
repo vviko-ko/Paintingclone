@@ -65,7 +65,7 @@ export default function Footer() {
       {/* Locations Section */}
       <div>
         <h1 className="text-white font-bold text-lg">Locations</h1>
-        <div className="flex flex-wrap gap-4 mt-3">
+        <div className="flex flex-wrap gap-4 mt-3 space-x-40">
           {["Lagos", "Ibadan", "Ijebu-Ode", "Ijebu-Ife", "Ago"].map((location, index) => (
             <div key={index} className="flex items-center text-white">
               <FaChevronRight className="mr-2" /> {location}

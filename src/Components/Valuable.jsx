@@ -4,7 +4,7 @@ export default function Valuable() {
   return (
     <div className='flex flex-col md:flex-row gap-10 mt-8 px-4 md:px-10'>
       <div className='relative md:w-1/2'>
-        <img src={Bg} alt="" className='absolute hidden md:block top-0 left-0 w-full' />
+        <img src={Bg} alt="" className='h-[50px] absolute hidden md:block top-0 left-0 w-full' />
         <h1 className='relative font-bold text-2xl mb-8 text-center md:text-left'>What we provide our valuable customers:</h1>
         <ul className='list-disc ml-4 space-y-3 text-center md:text-left'>
           <li>Clean, friendly, and reliable service from our experts</li>
