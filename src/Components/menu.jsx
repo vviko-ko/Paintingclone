@@ -25,6 +25,11 @@ export default function ServicesDropdown() {
     { name: "Painting & Designs", link: "/Our-services/Painting_Design" },
     { name: "Wallpaper Hanging", link: "/Our-services/Wallpaper_Hanging" },
     { name: "Commercial Decorating", link: "/Our-services/Commercial_Decorating" },
+    { name: "External Decorating", link: "/Our-services/External_Decor" },
+    { name: "Interior Decorating", link: "/Our-services/Interior_Decor" },
+    { name: "Laminate floor", link: "/Our-services/laminate_Floor" },
+    { name: "Plastering", link: "/Our-services/plastering" },
+    { name: "House Refurblishment", link: "/Our-services/House_Refurb" },
   ];
 
   return (
