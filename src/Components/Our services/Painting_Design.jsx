@@ -34,6 +34,7 @@ function Painting() {
             <div className="hero pt-12 bg-cover bg-center min-h-[800px] px-6 md:px-12" style={{ backgroundImage: `url(${bghero})` }}>
             <h1 className="font-bold text-3xl md:text-5xl mb-6 text-center md:text-left">
                 Painting and Design Services
+                {/* Painting and design services */}
             </h1>
               <div className="flex flex-col md:flex-row gap-6 md:gap-12">
                        <img src={pdhero} alt="Painting Image" className="w-full md:w-1/2 rounded-lg" />
