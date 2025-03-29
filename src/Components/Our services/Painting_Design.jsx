@@ -5,7 +5,7 @@ import painting from './our services images/painting.jpg';
 import Navbar from '../Navbar';
 import bghero from './our services images/bg-hero.png';
 import pdhero from './our services images/painting-and-decorating1.webp'
-import { color } from 'framer-motion';
+// import { color } from 'framer-motion';
 
 function Painting() {
     const navigate = useNavigate(); // Hook for navigation

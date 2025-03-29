@@ -24,8 +24,8 @@ export default function Inses() {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 justify-center">
           {[ins1, ins2].map((img, index) => (
             <div key={index} className="relative">
-              <img src={img} alt="" className="rounded-lg h-[300px] w-full" />
-              <p className="absolute bottom-5 bg-white p-3 font-semibold mx-5 text-center shadow-lg">
+              <img src={img} alt="" className="rounded-lg h-[300px] w-full " />
+              <p className="absolute bottom-5 bg-white py-3 px-40  font-semibold mx-5  text-center shadow-lg">
                 {index === 0
                   ? "Each color has significance that we will express through your choice of paint and decoration."
                   : "Blues remind you of water or sky and choosing a light to medium shade is soothing for the eyes."}
