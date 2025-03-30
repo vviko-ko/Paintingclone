@@ -10,6 +10,7 @@ import Photo from './Components/Photo_Gallery'
 import Home from './Components/Home'
 import Painting from './Components/Our services/Painting_Design'
 import ExternalDecor from "./Components/Our services/ExternalDecor";
+import InteriorDecor from './Components/Our services/Interior_Decor';
 // import Exter_Decor from './Components/Our services/ExternalDecor'
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 import StickyForm from './Components/StickyForm_prices'
@@ -37,6 +38,7 @@ export default function App() {
     <Route path='/StickyForm' element={<StickyForm/>}></Route>
     <Route path='/Painting' element={<Painting/>}></Route>
     <Route path="/Our-services/External_Decor" element={<ExternalDecor />} />
+    <Route path='/Our-services/Interior_Decor' element={<InteriorDecor/>} />
     {/* <Route path="/Our-services/External_Decor" element={<External_Decor/>} /> */}
     {/* <Route path='/Exter_Decor' element={<ExterDecor/>}></Route> */}
   </Routes>
