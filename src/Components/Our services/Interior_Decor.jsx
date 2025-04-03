@@ -31,9 +31,12 @@ function InteriorDecor(){
                      <div className="" style={{backgroundImage: `url(${bghero})`, height: '500px'}}>
                      <h1 className="text-4xl font-bold text-center mt-7 mb-8">Interior Painters and Decorator Nigeria</h1>
                       <div className='flex ml-50 gap-12 text-xl'>
-                                 <p>Painting and interior decoration of your home or office space in London is now easier than ever thanks to Paint Works London. As one of the most sought after interior painters and decorators in London, we operate from our registered address at West Africa House and cater to a steadily expanding client base covering the entire city and the nearby areas.</p>
-                                 <img src={inter12} alt="" className='w-[500px] h-[350px] rounded-sm'/>
+                                 <p>Painting and interior decoration of your home or office space in Nigeria is now easier than ever thanks to Paint Works Nigeria. As one of the most sought after interior painters and decorators in Nigeria, we operate from our registered address at West Africa House and cater to a steadily expanding client base covering the entire city and the nearby areas.
+                                 <br /> Unlike average painters in Nigeria, our aim is to make your indoors clean and orderly so that the overall quality of life improves while you along with your family members or employees enjoy greater comfort. At Paint Works Nigeria, we are PDCA-certified. Our skilled and experienced painters and decorators possess in-depth expertise to cater to your tastes and needs.
+                                 </p>
+                                 <img src={inter12} alt="" className='w-[500px] h-[350px] rounded-sm'/>  
                     </div>
+                    
                      </div>
         </main>
     )
