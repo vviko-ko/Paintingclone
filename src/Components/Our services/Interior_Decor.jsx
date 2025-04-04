@@ -4,6 +4,7 @@ import Navbar from '../Navbar';
 import { FaPhoneVolume } from 'react-icons/fa';
 import inter from '../../Image/inter.jpg';
 import inter12 from '../../Image/inter12.webp';
+import inter3 from '../../Image/inter3.webp'
 import bghero from '../../Image/bg-hero.png';
 
 function InteriorDecor() {
@@ -44,6 +45,7 @@ function InteriorDecor() {
                 style={{ backgroundImage: `url(${bghero})` }}
             >
                 <h1 className="text-4xl font-bold text-center mb-8">Interior Painters and Decorators in Nigeria</h1>
+                {/* <p className='border-b-4 border-blue-600 w-[100px] mx-auto md:mx-0'></p> */}
                 <div className='flex flex-col md:flex-row gap-8 md:gap-12 items-center'>
                     <p className="text-lg md:text-xl leading-relaxed">
                         Painting and interior decoration of your home or office space in Nigeria is now easier than ever thanks to Paint Works Nigeria. 
@@ -60,6 +62,21 @@ function InteriorDecor() {
                     As one of the most reliable interior decorators in Nigeria, we value the trust that clients impose on us. Our creative experts never leave anything unattended
                     to ensure clients get higher value for their hard-earned money. At Paint Works Nigeria, we believe in innovation. Our experts spend enough time racking their brains
                     not only to make your home or office more attractive both from outside and inside but also to mirror your refined taste and choice in the process.
+                </p>
+
+                {/* section2 */}
+                <h1 className="text-4xl font-bold pt-8 mb-8">Specialist Interior Painters and Decorators in Nigeria</h1>
+                <p className='border-b-4 border-blue-600 w-[100px] mx-auto md:mx-0 '></p>
+                <div className='flex flex-col md:flex-row pt-6 gap-8 md:gap-12 items-center'>
+                    <p className="text-lg md:text-xl leading-relaxed">
+                    At Paint Works Nigeria, painting and interior decoration are our passion. And as committed professionals, we have made our passion our profession. Before starting a project, we build a customised approach to provide your property with a unique identity that carries your signature identity.
+                                                <br /><br /> 
+                                                As a result, once a client remains a client across the ages. What is worth mentioning, our existing clients voluntarily gift us with volumes of referential business round the year.
+                    </p>
+                    <img src={inter3} alt="Interior Design" className='w-full md:w-[500px] h-auto md:h-[350px] rounded-sm shadow-lg' />
+                </div>
+                <p className="text-lg md:text-xl mt-6 leading-relaxed">
+                They keep introducing us to their friends, colleagues and peers. Thus, we are one of the most widely trusted interior painters & decorators in London and its surrounding areas.
                 </p>
             </div>
         </main>
