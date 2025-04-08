@@ -78,6 +78,11 @@ function InteriorDecor() {
                 <p className="text-lg md:text-xl mt-6 leading-relaxed">
                 They keep introducing us to their friends, colleagues and peers. Thus, we are one of the most widely trusted interior painters & decorators in London and its surrounding areas.
                 </p>
+
+                {/* section3 */}
+                <h1 className='text-4xl font-bold pt-8 mb-8'>Our interior painting and decorating services</h1>
+                <p className='border-b-4 border-blue-600 w-[100px] mx-auto md:mx-0 '></p>
+                <p className='pt-8 text-lg md:text-xl leading-relaxed'>Skilled and innovative interior painters & decorators in our team offer a range of services including the following:</p>
             </div>
         </main>
     );
