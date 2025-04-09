@@ -19,6 +19,7 @@ function InteriorDecor() {
                 <Navbar />
                 <div className="mt-14 px-6 md:px-20 lg:px-44">
                     <h1 className="text-white font-bold text-3xl md:text-4xl lg:text-[36px]">
+                        {/* jjj */}
                         Interior Painters And Decorators
                     </h1>
                     <div className="flex flex-col md:flex-row gap-4 md:gap-6 mt-5 items-center">
